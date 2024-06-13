@@ -1,0 +1,9 @@
+<mat-toolbar class="layout-topbar">
+  <button mat-icon-button (click)="toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <button mat-raised-button *ngIf="isLoggedIn()" (click)="logout()">
+    <span>Logout</span>
+  </button>
+</mat-toolbar>

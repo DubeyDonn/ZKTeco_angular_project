@@ -1,0 +1,54 @@
+.sidenav {
+  width: 250px;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.sidenav-topbar {
+  width: 100%;
+  /* height: 68px; */
+  /* background-color: #1976d2; */
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  background-color: rgba(25, 118, 210, 0.1);
+  /* color: #1976d2 !important; */
+}
+
+.side-nav-list a.active .mdc-list-item__primary-text {
+  /* color: #1976d2 !important; */
+}
+
+.active:focus::before {
+  background-color: transparent;
+  outline: none;
+}
+
+.side-nav-list {
+  padding: 16px;
+}
+
+.list-item {
+  border-radius: 50px !important;
+}

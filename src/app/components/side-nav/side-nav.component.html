@@ -1,0 +1,28 @@
+<div class="sidenav">
+  <div class="sidenav-topbar">
+    <a [routerLink]="['/']">
+      <h1>ZKTeco</h1>
+    </a>
+  </div>
+  <mat-nav-list class="side-nav-list">
+    <!-- @for (nav of fillerNav; track nav) {
+    <a mat-list-item routerLink=".">{{ nav }}</a>
+    } -->
+    <a
+      mat-list-item
+      class="list-item"
+      [routerLink]="['/dashboard']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Dashboard</a
+    >
+    <a
+      mat-list-item
+      class="list-item"
+      [routerLink]="['/daily-attendance']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Daily Attendance</a
+    >
+  </mat-nav-list>
+</div>

@@ -1,0 +1,55 @@
+@if (!isLoggedIn) {
+<mat-drawer-container class="login-container row">
+  <mat-card class="col-md-6 col-xl-4 mx-auto mt-5">
+    <mat-card-content>
+      <form
+        name="form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+        novalidate
+      >
+        <h2>Log In</h2>
+        <mat-form-field class="w-100">
+          <input
+            matInput
+            type="username"
+            placeholder="Username"
+            name="username"
+            [(ngModel)]="form.value.username"
+            [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+            #username="ngModel"
+            required
+          />
+          <mat-error *ngIf="username.errors && f.submitted">
+            Username is required!
+          </mat-error>
+        </mat-form-field>
+        <br />
+        <mat-form-field class="w-100">
+          <input
+            matInput
+            type="password"
+            placeholder="Password"
+            name="password"
+            [(ngModel)]="form.value.password"
+            #password="ngModel"
+            minlength="5"
+            [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+            required
+          />
+          <mat-error *ngIf="password.errors && f.submitted">
+            Password must be at least 5 characters!
+          </mat-error>
+        </mat-form-field>
+        <br />
+        @if (f.submitted && isLoginFailed) {
+        <div class="alert alert-danger" role="alert">
+          Login failed: {{ errorMessage }}
+        </div>
+        }
+        <button mat-raised-button class="mx-auto">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</mat-drawer-container>
+}

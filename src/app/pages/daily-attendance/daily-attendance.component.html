@@ -1,0 +1,56 @@
+<div class="d-flex justify-content-between align-items-center">
+  <h1 class="fw-bold">Daily Attendance</h1>
+  <ng-container>
+    <button
+      mat-stroked-button
+      color="warn"
+      class="sync-btn ms-auto"
+      (click)="syncAttendance()"
+      *ngIf="!isSyncing"
+    >
+      Sync Attendance
+    </button>
+
+    <button
+      mat-stroked-button
+      color="warn"
+      class="sync-btn ms-auto"
+      [disabled]="isSyncing"
+      *ngIf="isSyncing"
+    >
+      Syncing Attendance
+    </button>
+    <mat-progress-spinner
+      mode="indeterminate"
+      class="progress-spinner"
+      *ngIf="isSyncing"
+    ></mat-progress-spinner>
+  </ng-container>
+</div>
+<div class="mb-3 d-md-flex justify-content-between">
+  <div class="d-md-flex gap-2">
+    <app-date-range-picker
+      class=""
+      [range]="formDateRange"
+      [onRangeChange]="onRangeChange"
+    ></app-date-range-picker>
+
+    <app-select-multiple
+      class=""
+      [title]="'Select Employees'"
+      [itemList]="employeeList"
+      [(selectedItems)]="selectedEmployees"
+      [onItemsChange]="onEmployeeChange"
+    ></app-select-multiple>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <span class="me-2">Selected Date Range:</span>
+    <span class="fw-bold">
+      {{ formDateRange.value.start | date : "MM/dd/yyyy" }} -
+      {{ formDateRange.value.end | date : "MM/dd/yyyy" }}
+    </span>
+  </div>
+</div>
+
+<app-table [dataSource]="dataSource" [columns]="columns"></app-table>
