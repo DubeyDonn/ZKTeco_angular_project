@@ -37,6 +37,21 @@ const routes: Routes = [
         component: DailyAttendanceComponent,
         canActivate: [authGuard],
       },
+      {
+        path: 'setup',
+        loadChildren: () =>
+          import('./pages/setup/setup.module').then((m) => m.SetupModule),
+        canActivate: [authGuard],
+      },
+
+      {
+        path: 'office-management',
+        loadChildren: () =>
+          import('./pages/office-management/office-management.module').then(
+            (m) => m.OfficeManagementModule
+          ),
+        canActivate: [authGuard],
+      },
     ],
   },
   { path: 'login', component: LoginComponent },

@@ -1,0 +1,80 @@
+<h2 mat-dialog-title>Edit Shift</h2>
+<mat-dialog-content class="mat-typography">
+  <form class="row" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="col-12">
+      <mat-label>Shift Name</mat-label>
+      <input matInput formControlName="name" required />
+      <mat-error *ngIf="form.get('name')!.hasError('required')">
+        Shift Name is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-12">
+      <mat-label>Shift Start</mat-label>
+      <input
+        matInput
+        formControlName="shiftStart"
+        [ngxMatTimepicker]="shiftStart"
+        required
+      />
+      <ngx-mat-timepicker #shiftStart></ngx-mat-timepicker>
+      <mat-error *ngIf="form.get('shiftStart')!.hasError('required')">
+        Shift Start is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-12">
+      <mat-label>Shift End</mat-label>
+      <input
+        matInput
+        formControlName="shiftEnd"
+        [ngxMatTimepicker]="shiftEnd"
+        required
+      />
+      <ngx-mat-timepicker #shiftEnd></ngx-mat-timepicker>
+      <mat-error *ngIf="form.get('shiftEnd')!.hasError('required')">
+        Shift End is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-12">
+      <mat-label>Break Start</mat-label>
+      <input
+        matInput
+        formControlName="breakStart"
+        [ngxMatTimepicker]="breakStart"
+        required
+      />
+      <ngx-mat-timepicker #breakStart></ngx-mat-timepicker>
+      <mat-error *ngIf="form.get('breakStart')!.hasError('required')">
+        Break Start is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-12">
+      <mat-label>Break End</mat-label>
+      <input
+        matInput
+        formControlName="breakEnd"
+        [ngxMatTimepicker]="breakEnd"
+        required
+      />
+      <ngx-mat-timepicker #breakEnd></ngx-mat-timepicker>
+      <mat-error *ngIf="form.get('breakEnd')!.hasError('required')">
+        Break End is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-12">
+      <mat-label>Shift Type</mat-label>
+      <input matInput formControlName="type" required />
+      <mat-error *ngIf="form.get('type')!.hasError('required')">
+        Shift Type is required
+      </mat-error>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button cdkFocusInitial (click)="onSubmit()">Edit</button>
+</mat-dialog-actions>

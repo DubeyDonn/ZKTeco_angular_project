@@ -3,14 +3,53 @@
   <input matInput (keyup)="applyFilter($event)" placeholder="" #input />
 </mat-form-field>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table
+  matSort
+  (matSortChange)="sortFunction($event)"
+  mat-table
+  [dataSource]="dataSource"
+  class="mat-elevation-z8"
+>
   @for (column of columns; track column) {
   <ng-container [matColumnDef]="column.columnDef">
-    <th mat-header-cell *matHeaderCellDef>
-      {{ column.header }}
-    </th>
+    <!-- If column is sortable -->
+    <ng-container *ngIf="column.sortable; else nonSortableHeader">
+      <th
+        mat-header-cell
+        mat-sort-header="{{ column.columnDef }}"
+        *matHeaderCellDef
+      >
+        {{ column.header }}
+      </th>
+    </ng-container>
+    <!-- If column is not sortable -->
+    <ng-template #nonSortableHeader>
+      <th mat-header-cell *matHeaderCellDef>
+        {{ column.header }}
+      </th>
+    </ng-template>
     <td mat-cell *matCellDef="let row">
-      {{ column.cell(row) }}
+      <!-- Check if column.html is true and render HTML content -->
+      <span *ngIf="column.action">
+        <button
+          *ngIf="column.editAction"
+          mat-icon-button
+          color="primary"
+          (click)="column.editAction(row)"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          *ngIf="column.deleteAction"
+          mat-icon-button
+          color="warn"
+          (click)="column.deleteAction(row)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </span>
+      <!-- If column.html is not true, render as plain text -->
+      <ng-container *ngIf="!column.action">{{ column.cell(row) }}</ng-container>
     </td>
   </ng-container>
   }

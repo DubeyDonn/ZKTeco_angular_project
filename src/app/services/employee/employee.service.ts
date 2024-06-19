@@ -17,4 +17,17 @@ export class EmployeeService {
   getEmployees(): Observable<any> {
     return this.http.get(AUTH_API + 'employees');
   }
+
+  updateEmployee(employeeId: any, employee: any): Observable<any> {
+    return this.http.put(
+      AUTH_API + 'employee/edit?employeeId=' + employeeId,
+      employee
+    );
+  }
+
+  deleteEmployee(employeeId: any): Observable<any> {
+    return this.http.delete(
+      AUTH_API + 'employee/delete?employeeId=' + employeeId
+    );
+  }
 }

@@ -24,5 +24,10 @@
       [routerLinkActiveOptions]="{ exact: true }"
       >Daily Attendance</a
     >
+    <app-dropdown-tree [nodeDate]="setupNodeData"></app-dropdown-tree>
+
+    <app-dropdown-tree
+      [nodeDate]="officeManagementNodeData"
+    ></app-dropdown-tree>
   </mat-nav-list>
 </div>

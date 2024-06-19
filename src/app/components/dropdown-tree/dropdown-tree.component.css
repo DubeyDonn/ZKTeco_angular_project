@@ -1,0 +1,17 @@
+.list-item {
+  border-radius: 50px !important;
+}
+
+/* .list-item.expanded {
+  background-color: #515151;
+} */
+
+.active {
+  /* background-color: rgba(25, 118, 210, 0.1); */
+  background-color: #515151;
+}
+
+.active:focus::before {
+  background-color: transparent;
+  outline: none;
+}

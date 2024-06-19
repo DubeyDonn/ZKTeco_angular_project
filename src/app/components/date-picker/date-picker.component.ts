@@ -30,8 +30,5 @@ export class DatePickerComponent {
     this.onDateChange(event);
   }
 
-  constructor() {
-    console.log('DatePickerComponent');
-    console.log(this.date);
-  }
+  constructor() {}
 }

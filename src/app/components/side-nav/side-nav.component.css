@@ -32,11 +32,8 @@ a {
 }
 
 .active {
-  background-color: rgba(25, 118, 210, 0.1);
-  /* color: #1976d2 !important; */
-}
-
-.side-nav-list a.active .mdc-list-item__primary-text {
+  /* background-color: rgba(25, 118, 210, 0.1); */
+  background-color: #515151;
   /* color: #1976d2 !important; */
 }
 
