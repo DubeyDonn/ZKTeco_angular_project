@@ -1,0 +1,18 @@
+.list-unstyled {
+  padding-left: 1rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+
+.list-unstyled li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list-unstyled li a:hover {
+  text-decoration: underline !important;
+}

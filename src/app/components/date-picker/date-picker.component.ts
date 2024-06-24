@@ -31,4 +31,12 @@ export class DatePickerComponent {
   }
 
   constructor() {}
+
+  public monthChanged(value: any, widget: any): void {
+    console.log(value);
+    const start = new Date(value.getFullYear(), value.getMonth(), 1);
+    const end = new Date(value.getFullYear(), value.getMonth() + 1, 0);
+
+    console.log(start, end);
+  }
 }

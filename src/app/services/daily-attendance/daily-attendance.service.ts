@@ -45,7 +45,7 @@ export class DailyAttendanceService {
   getAttendanceRecordByDateRangeAndEmployee(
     fromDate: any,
     toDate: any,
-    employeeIds: string[]
+    employeeIds: string[] = []
   ): Observable<any> {
     const formattedFromDate = `${fromDate.getFullYear()}-${(
       fromDate.getMonth() + 1

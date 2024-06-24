@@ -14,16 +14,32 @@
       [routerLink]="['/dashboard']"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-      >Dashboard</a
     >
+      Dashboard
+    </a>
     <a
       mat-list-item
       class="list-item"
       [routerLink]="['/daily-attendance']"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-      >Daily Attendance</a
     >
+      Daily Attendance
+    </a>
+
+    <a
+      mat-list-item
+      class="list-item"
+      [routerLink]="['/report']"
+      routerLinkActive="active"
+    >
+      Reports
+    </a>
+
+    <!-- <app-dropdown-tree
+      [nodeDate]="attendanceInsightNodeData"
+    ></app-dropdown-tree> -->
+
     <app-dropdown-tree [nodeDate]="setupNodeData"></app-dropdown-tree>
 
     <app-dropdown-tree

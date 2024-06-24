@@ -44,5 +44,17 @@ export class SideNavComponent {
     },
   ];
 
+  attendanceInsightNodeData: any[] = [
+    {
+      name: 'Attendance Insights',
+      children: [
+        {
+          name: 'Daily Insight',
+          path: '/attendance-insight/daily',
+        },
+      ],
+    },
+  ];
+
   constructor() {}
 }

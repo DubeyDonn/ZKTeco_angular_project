@@ -52,6 +52,20 @@ const routes: Routes = [
           ),
         canActivate: [authGuard],
       },
+      {
+        path: 'attendance-insight',
+        loadChildren: () =>
+          import('./pages/attendance-insight/attendance-insight.module').then(
+            (m) => m.AttendanceInsightModule
+          ),
+        canActivate: [authGuard],
+      },
+      {
+        path: 'report',
+        loadChildren: () =>
+          import('./pages/report/report.module').then((m) => m.ReportModule),
+        canActivate: [authGuard],
+      },
     ],
   },
   { path: 'login', component: LoginComponent },

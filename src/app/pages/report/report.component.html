@@ -1,0 +1,37 @@
+<h1 class="fw-bold">Reports</h1>
+
+<ng-container>
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Attendance Breakdown Reports</h3>
+      <ul class="list-unstyled">
+        <li>
+          <a class="text-decoration-none" [routerLink]="['breakdown/daily']"
+            >Daily Attendance Breakdown</a
+          >
+        </li>
+        <!-- <li>
+          <a class="text-decoration-none" [routerLink]="['breakdown/weekly']"
+            >Weekly Attendance Breakdown</a
+          >
+        </li> -->
+        <li>
+          <a class="text-decoration-none" [routerLink]="['breakdown/monthly']"
+            >Monthly Attendance Breakdown</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <h3 class>Attendance Summary Reports</h3>
+      <ul class="list-unstyled">
+        <li>
+          <a class="text-decoration-none" [routerLink]="['summary/monthly']"
+            >Monthly Attendance Summary</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</ng-container>
