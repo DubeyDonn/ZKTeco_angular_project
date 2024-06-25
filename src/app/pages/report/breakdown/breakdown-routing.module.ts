@@ -4,14 +4,8 @@ import { authGuard } from '../../../helpers/auth/auth.guard';
 import { DailyBreakdownComponent } from './daily-breakdown/daily-breakdown.component';
 import { WeeklyBreakdownComponent } from './weekly-breakdown/weekly-breakdown.component';
 import { MonthlyBreakdownComponent } from './monthly-breakdown/monthly-breakdown.component';
-import { BreakdownComponent } from './breakdown.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: BreakdownComponent,
-    canActivate: [authGuard],
-  },
   {
     path: 'daily',
     component: DailyBreakdownComponent,

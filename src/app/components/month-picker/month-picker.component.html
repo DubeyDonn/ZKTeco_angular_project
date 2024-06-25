@@ -3,7 +3,7 @@
   <mat-label *ngIf="monthEnd == true">Enter Month (To)</mat-label>
   <mat-label *ngIf="monthEnd == null">Enter Month</mat-label>
   <input matInput [matDatepicker]="picker" [formControl]="date!" />
-  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-hint>MM/YYYY</mat-hint>
   <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
   <mat-datepicker
     #picker

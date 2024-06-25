@@ -2,7 +2,16 @@
   <mat-spinner></mat-spinner>
 </div>
 
-<h1 class="fw-bold">Monthly Attendance Breakdown</h1>
+<div class="d-flex gap-2 align-items-center mb-3">
+  <button
+    mat-icon-button
+    aria-label="Example icon button with a vertical three dot icon"
+    (click)="goBack()"
+  >
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <h1 class="fw-bold m-0">Monthly Attendance Breakdown</h1>
+</div>
 
 <div class="mb-3 d-md-flex justify-content-between">
   <div class="d-md-flex gap-3 align-items-center">

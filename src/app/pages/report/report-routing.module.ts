@@ -22,6 +22,12 @@ const routes: Routes = [
       import('./summary/summary.module').then((m) => m.SummaryModule),
     canActivate: [authGuard],
   },
+  {
+    path: 'shortfall',
+    loadChildren: () =>
+      import('./shortfall/shortfall.module').then((m) => m.ShortfallModule),
+    canActivate: [authGuard],
+  },
 ];
 
 @NgModule({

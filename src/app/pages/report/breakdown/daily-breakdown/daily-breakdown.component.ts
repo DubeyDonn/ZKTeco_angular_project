@@ -12,6 +12,7 @@ import { DailyAttendanceService } from '../../../../services/daily-attendance/da
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { compare } from '../../../daily-attendance/daily-attendance.component';
 import { EmployeeService } from '../../../../services/employee/employee.service';
+import { MatIconModule } from '@angular/material/icon';
 
 interface DailyAttendanceBreakdown {
   day: string;
@@ -38,6 +39,7 @@ const day = today.getDate();
     DateRangePickerComponent,
     JsonPipe,
     MatSortModule,
+    MatIconModule,
   ],
   templateUrl: './daily-breakdown.component.html',
   styleUrl: './daily-breakdown.component.css',
@@ -99,6 +101,10 @@ export class DailyBreakdownComponent implements OnInit {
       this.formDateRange.value.end
     );
   }
+
+  goBack = () => {
+    window.history.back();
+  };
 
   sortData = (event: any) => {
     const isAsc = event.direction === 'asc';

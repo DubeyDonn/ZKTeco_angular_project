@@ -11,6 +11,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { TableComponent } from '../../../../components/table/table.component';
 import { compare } from '../../../daily-attendance/daily-attendance.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 interface MonthlyAttendanceBreakdown {
   month: string;
@@ -33,6 +34,7 @@ const day = today.getDate();
     MatProgressSpinnerModule,
     TableComponent,
     MatButtonModule,
+    MatIconModule,
   ],
   templateUrl: './monthly-breakdown.component.html',
   styleUrl: './monthly-breakdown.component.css',
@@ -92,6 +94,10 @@ export class MonthlyBreakdownComponent implements OnInit {
       this.toMonth.value
     );
   }
+
+  goBack = () => {
+    window.history.back();
+  };
 
   sortData = (event: any) => {
     const data = this.tableDataSource.data.slice();

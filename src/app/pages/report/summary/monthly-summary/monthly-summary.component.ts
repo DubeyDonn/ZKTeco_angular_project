@@ -13,6 +13,7 @@ import { MonthPickerComponent } from '../../../../components/month-picker/month-
 import { TableComponent } from '../../../../components/table/table.component';
 import { MatButtonModule } from '@angular/material/button';
 import { last } from 'rxjs';
+import { MatIconModule } from '@angular/material/icon';
 
 interface MonthlySummary {
   employeeId: number;
@@ -37,6 +38,7 @@ const day = today.getDate();
     MonthPickerComponent,
     TableComponent,
     MatButtonModule,
+    MatIconModule,
   ],
   templateUrl: './monthly-summary.component.html',
   styleUrl: './monthly-summary.component.css',
@@ -98,6 +100,10 @@ export class MonthlySummaryComponent implements OnInit {
       this.getToDate(this.month.value)
     );
   }
+
+  goBack = () => {
+    window.history.back();
+  };
 
   getToDate = (month: any) => {
     return new Date(month.getFullYear(), month.getMonth() + 1, 0);

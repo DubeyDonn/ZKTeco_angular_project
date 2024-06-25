@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BreakdownComponent } from './breakdown.component';
+import { HoursShortfallComponent } from './hours-shortfall.component';
 
-describe('BreakdownComponent', () => {
-  let component: BreakdownComponent;
-  let fixture: ComponentFixture<BreakdownComponent>;
+describe('HoursShortfallComponent', () => {
+  let component: HoursShortfallComponent;
+  let fixture: ComponentFixture<HoursShortfallComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BreakdownComponent]
+      imports: [HoursShortfallComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(BreakdownComponent);
+    fixture = TestBed.createComponent(HoursShortfallComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

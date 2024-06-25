@@ -1,0 +1,275 @@
+[
+  {
+    "day": "2024-05-02",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "08:56:13",
+    "checkOutTime": "09:09:13",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-03",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:08:49",
+    "checkOutTime": "18:15:35",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-06",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:06:25",
+    "checkOutTime": "18:16:14",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-07",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:05:47",
+    "checkOutTime": "18:15:58",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-08",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:08:54",
+    "checkOutTime": "18:15:16",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-09",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:07:50",
+    "checkOutTime": "18:15:29",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-10",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:04:59",
+    "checkOutTime": "18:16:05",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-13",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:08:01",
+    "checkOutTime": "18:16:40",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-14",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:06:23",
+    "checkOutTime": "18:16:15",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-15",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:05:44",
+    "checkOutTime": "18:16:34",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-16",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:03:10",
+    "checkOutTime": "18:16:27",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-17",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:02:49",
+    "checkOutTime": "18:15:30",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-21",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:03:30",
+    "checkOutTime": "18:16:46",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-22",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:03:11",
+    "checkOutTime": "18:16:25",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-23",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:01:37",
+    "checkOutTime": "18:16:49",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-24",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:04:01",
+    "checkOutTime": "18:17:58",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-27",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:02:39",
+    "checkOutTime": "18:15:33",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-28",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:03:33",
+    "checkOutTime": "18:44:21",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-29",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:06:27",
+    "checkOutTime": "18:15:22",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-30",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:03:58",
+    "checkOutTime": "18:16:27",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  },
+  {
+    "day": "2024-05-31",
+    "userId": "20",
+    "name": "Sandip Shakya",
+    "checkInTime": "09:03:08",
+    "checkOutTime": "18:15:24",
+    "shift": {
+      "shiftStart": "09:00:00",
+      "shiftEnd": "18:15:00",
+      "breakStart": "13:00:00",
+      "breakEnd": "13:45:00"
+    }
+  }
+]
